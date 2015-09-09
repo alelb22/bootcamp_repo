@@ -2,8 +2,9 @@
 My Globant Bootcamp source code for review.
 
 
-
 ----------
+
+
 HTML5 BootCamp base folders layout
 
 Please, use this repository as a base for you training phase. The idea is
