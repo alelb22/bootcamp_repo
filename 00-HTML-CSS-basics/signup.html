@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Sign Up</title>
+    <meta name="description" content="My Globant Bootcamp HTML5 page.">
+    <meta name="keywords" content="bootcamp,globant,html5">
+	<link rel="shortcut icon" href="includes/globant_icon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="includes/styles.css">
+    <link rel="stylesheet" type="text/css" media="print" href="includes/printstyles.css">
+  </head>
+  <body>
+    <div role="main" id="main-content">
+      <form id="contact-form" action="script.php" method="post">  
+        <input type="hidden" name="redirect" value="form_sent.html" />	
+        <label for="firstname">First Name:</label> <input type="text" required name="firstname" id="firstname" value="" placeholder="Required"/>
+        <label for="lastname">Last Name:</label> <input type="text" required name="lastname" id="lastname" value=""  placeholder="Required"/>
+        <label for="email">Email:</label> <input type="email" required name="email" id="email" value="" placeholder="Enter a valid email address"/>
+        <label for="birthday">Birthday:</label> <input type="text" name="birthday" id="birthday" value="" placeholder="DD/MM/YYYY (Optional)"/>
+        <label for="sport_select_list_style">Favourite Sport:</label>
+        <select name="sport_select_list_style" id="sport_select_list_style">
+          <option value="">Select sport</option>
+          <option value="tennis">Tennis</option>
+          <option value="football">Football</option>
+          <option value="swimming">Swimming</option>
+          <option value="basketball">Basketball</option>
+          <option value="other">Other</option>
+        </select>
+        <br><br>
+	    <label for="textbio">Biography:</label> <textarea name="textbio" id="textbio" cols="39" rows="3"></textarea>        
+        <input type="submit" value="submit" class=".button_hover"/>            <input type="reset" value="reset" />
+      </form>
+	</div>
+  </body>
+</html>

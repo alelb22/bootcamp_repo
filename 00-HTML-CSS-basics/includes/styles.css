@@ -1,0 +1,136 @@
+/* General Styles Modifiers */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: blue;
+}
+
+a:focus,
+a:hover {
+  background-color: #0000FF;
+  color: white;
+  text-decoration: underline;
+}
+
+body{
+  background:#fff;
+  color:#000;
+  font-family: helvetica, arial, sans-serif;
+}
+
+form {
+  width:300px;
+  margin: 20px;
+}
+
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border:1px solid #ccc;
+  font-size:20px;
+  width:300px;
+  min-height:30px;
+  display:block;
+  margin-bottom:15px;
+  margin-top:5px;
+}
+
+input[type=submit] {
+  background:none;
+  padding:10px;
+  width:300px;
+}
+
+input:hover{
+  cursor:url(glowing-green-cursor.png),url(smiley.gif),auto;
+}
+
+input:invalid {
+  border-color: #800000;
+  border-width: 1px;
+  background-color: #ffdddd;
+}
+
+/* invalid and focus have Specificity of 0011 both, that's why invalid is not following the alphabetically order like the rest  */
+input:focus{
+  border:1px solid;
+  font-size:20px;
+  width:300px;
+  min-height:30px;
+  display:block;
+  margin-bottom:15px;
+  margin-top:5px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+input:required {
+/*
+  border-color: #800000;
+  border-width: 3px;
+*/
+}
+
+input:valid {
+  background-color: #fff ;
+}
+
+textarea {
+    width:294px;
+}
+
+input:-webkit-autofill {  /*  Used to avoid autofill setting a background color */
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+
+/* Class Styles Modifiers */
+
+.hidden {
+    position: absolute; /* clip only relevant on absolutely positioned elements */
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px); /* For IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.hidden:focus {
+    height: auto;
+    width: auto;
+    clip: auto;
+}
+
+.table_with_borders {
+  border-collapse: collapse;
+}
+.table_with_borders td, th {
+  border: 1px solid black;
+}  
+
+.triangle_icon_list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.triangle_icon_list li {
+  background-image: url(triangle_icon.png);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: 0px center; 
+  padding-left: 15px;
+ }
+
+
+
+/* Id Styles Modifiers */
+
+#sport_select_list_style{
+ width:300px;   
+}
+
+#sport_select_list_style option{
+ width:300px;   
+}

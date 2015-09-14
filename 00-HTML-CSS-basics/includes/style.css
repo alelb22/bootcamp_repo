@@ -1,0 +1,50 @@
+
+
+.header{
+  font-size:46px;
+  background-color:magenta;
+}
+
+.navigation{
+  font-size:12px;
+  background-color:blue;
+}
+
+.content{
+  font-size:14px;
+}
+
+.sidebar{
+  font-size:10px;
+  background-color:magenta;
+}
+
+.footer{
+  font-size:10px;
+  background-color:magenta;
+}
+
+
+
+#with_background {
+  background-color:#00f;
+}
+
+
+/*
+This could be used for 2.3.6
+html *
+{
+   font-size: 35px !important;
+   color: #000 !important;
+   font-family: Arial !important;
+   background-color: transparent !important;
+}
+*/
+
+/*
+This could be used for 2.3.7
+.oh-no-inline-styles{
+  background:green !important;
+}
+*/
