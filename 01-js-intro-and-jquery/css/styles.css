@@ -1,0 +1,13 @@
+body {
+  background:#fff;
+  color:#000;
+  font-family: helvetica, arial, sans-serif;
+}
+
+section, div {
+  text-align: center;    
+}
+
+.section_hidden {
+  display: none;
+}
