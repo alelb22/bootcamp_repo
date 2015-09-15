@@ -11,3 +11,29 @@ section, div {
 .section_hidden {
   display: none;
 }
+
+.album_article_class{
+  display: block;
+  background:transparent;
+}
+
+.album_name_class{
+  font-size:1.5em;
+}
+
+.album_type_class{
+
+}
+
+.album_cover{
+
+}
+
+.album_release_date{
+
+}
+
+.album_spotify_link a:hover {
+  background:blue;
+  color: white;
+}
